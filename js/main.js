@@ -146,7 +146,7 @@ var svg = d3.select("#svg-parallel")
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
 // Load the data and visualization
-d3.csv("../data/fifadata.csv").then(function(raw_data) {
+d3.csv("data/fifadata.csv").then(function(raw_data) {
   // Convert quantitative scales to floats
   raw_data.forEach(function(d) {
     d.Age = +d.Age;
